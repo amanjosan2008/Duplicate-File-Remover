@@ -8,8 +8,6 @@ dirs = ["/media/system/Data/",
         "/data/.move/",
         "/data/.folder/"]
 
-
-
 x,y,z = [],[],[]
 
 for i in range(len(dirs)):
@@ -28,9 +26,6 @@ for i in range(len(dirs)):
                 hash = hasher.hexdigest()
                 x.append(fullpath)
                 y.append(hash)
-
-for i in range(len(x)):
-    print(x[i], y[i])
 
 a = 1
 b = [item for item, count in collections.Counter(y).items() if count > 1]
